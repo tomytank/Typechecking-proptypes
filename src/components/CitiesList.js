@@ -6,7 +6,7 @@ const CitiesList = props => {
   return (
     <div>
       {props.cities.map(city => (
-        <City key={city.id} city={city} />
+        <City />
       ))}
     </div>
   );
@@ -15,7 +15,7 @@ const CitiesList = props => {
 // type check and validate the type of data being passed To this component
 
 CitiesList.propTypes = {
-  cities: PropTypes.arrayOf(PropTypes.object).isRequired
+  cities: PropTypes.array.isRequired
 };
 
 export default CitiesList;
