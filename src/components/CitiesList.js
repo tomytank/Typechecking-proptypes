@@ -6,7 +6,7 @@ const CitiesList = props => {
   return (
     <div>
       {props.cities.map(city => (
-        <City />
+        <City key={city.id} city={city} />
       ))}
     </div>
   );
